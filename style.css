@@ -1,0 +1,151 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+
+    font-weight: 500;
+    font-size: 80px;
+    font-size: calc(30px + 50 * (100vw / 1980));
+    font-family: "Roboto", sans-serif;
+
+    overflow: hidden;
+
+    transition: background-color .2s linear;
+}
+
+body.one {
+    background-color: rgba(255, 0, 0, 0.25);
+}
+
+body.two {
+    background-color: rgba(255, 165, 0, 0.25);
+}
+
+body.three {
+    background-color: rgba(255, 255, 0, 0.25);
+}
+
+body.four {
+    background-color: rgba(0, 128, 0, 0.25);
+}
+
+body.five {
+    background-color: rgba(0, 0, 255, 0.25);
+}
+
+body.six {
+    background-color: rgba(0, 0, 139, 0.25);
+}
+
+body.seven {
+    background-color: rgba(128, 0, 128, 0.25);
+}
+
+.container {
+    cursor: default;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+
+    transform: translate(-50%, -50%);
+}
+
+.item {
+    font-size: 1000px;
+    font-size: calc(375px + 625 * (100vw / 1980));
+
+    opacity: 0.5;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+
+    transform: translate(-50%, -50%);
+    transition: color .2s linear;
+}
+
+.item.one {
+    color: #ff0000;
+}
+
+.item.two {
+    color: #ffa500;
+}
+
+.item.three {
+    color: #ffff00;
+}
+
+.item.four {
+    color: #008000;
+}
+
+.item.five {
+    color: #0000ff;
+}
+
+.item.six {
+    color: #00008b;
+}
+
+.item.seven {
+    color: #800080;
+}
+
+.color {
+    padding-left: 1.5em;
+
+    line-height: 1.5;
+    letter-spacing: 1em;
+
+    transition: color .2s linear;
+}
+
+.color--one:hover {
+    color: #ff0000;
+}
+
+.color--two:hover {
+    color: #ffa500;
+}
+
+.color--three:hover {
+    color: #ffff00;
+}
+
+.color--four:hover {
+    color: #008000;
+}
+
+.color--five:hover {
+    color: #0000ff;
+}
+
+.color--six:hover {
+    color: #00008b;
+}
+
+.color--seven:hover {
+    color: #800080;
+}
+
+@media (max-width: 767px) {
+    body {
+        font-size: calc(30px + (50 + 50 * 0.7) * ((100vw - 280px) / 1980));
+    }
+
+    .item {
+        font-size: calc(375px + (625 + 625 * 0.7) * ((100vw - 280px) / 1980));
+    }
+
+    .color {
+        padding-left: 1em;
+    }
+}
